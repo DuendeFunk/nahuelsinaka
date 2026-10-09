@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
     <url>
         <loc>https://nahuelsinaka.com/</loc>
         <lastmod>2026-10-09</lastmod>
-        <changefreq>monthly</changefreq>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <image:image>
-            <image:loc>https://nahuelsinaka.com/spotify_artist_image.jpg</image:loc>
+            <image:loc>https://nahuelsinaka.com/fotodeperfil.png</image:loc>
+            <image:title>Nahuel Sinaka</image:title>
         </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://i.ytimg.com/vi/dJPsdLUEwAk/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Nahuel Sinaka - CAEN LAS ESTRELLAS✨ (OFFICIAL VIDEO)</video:title>
+            <video:description>Videoclip oficial de Caen Las Estrellas, canción estelar del EP MÍRAME BRILLAR por Bull MNK, Hernuss MNK y Nahuel Sinaka. Producido por Liam.</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=dJPsdLUEwAk</video:content_loc>
+            <video:player_loc allow_embed="yes">https://www.youtube.com/embed/dJPsdLUEwAk</video:player_loc>
+            <video:duration>241</video:duration>
+            <video:publication_date>2026-05-30T17:06:41-07:00</video:publication_date>
+            <video:family_friendly>yes</video:family_friendly>
+            <video:uploader info="https://nahuelsinaka.com/">Nahuel Sinaka</video:uploader>
+        </video:video>
     </url>
 </urlset>
