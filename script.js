@@ -20,6 +20,11 @@ function onPlayerReady(event) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    // --- PROCESAR EMBED DE INSTAGRAM ---
+    if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process();
+    }
+
     const tipBtn = document.getElementById("tip-btn");
     const toast = document.getElementById("cyber-toast");
 
@@ -122,23 +127,5 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (unmuteText) unmuteText.innerText = "DESMUTEAR";
             }
         });
-    }
-
-    // Efecto de tipeo aleatorio sutil en el texto descriptivo
-    const typeWriterBox = document.querySelector('.typewriter-box p');
-    if (typeWriterBox) {
-        const text = typeWriterBox.innerText;
-        typeWriterBox.innerText = '';
-        let i = 0;
-        
-        function typeWriter() {
-            if (i < text.length) {
-                typeWriterBox.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, Math.random() * 30 + 10);
-            }
-        }
-        
-        typeWriter();
     }
 });
